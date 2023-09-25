@@ -1,6 +1,9 @@
+let num1;
+let operator;
+let num2;
+
 function operate(num1, operator, num2) {
-  operator.toString();
-  console.log(typeof operator);
+  console.log(typeof operator)
   if (operator === "+") {
     return add(num1, num2);
   } else if (operator === "-"){
