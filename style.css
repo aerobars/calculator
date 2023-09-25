@@ -1,3 +1,15 @@
 * {
   border: 1px solid red;
 }
+
+.row {
+  display: flex;
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+  background-color:rgb(100, 85, 75);
+}
+
+.button {
+  padding: 20px;
+}
