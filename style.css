@@ -12,4 +12,19 @@
 
 .button {
   padding: 20px;
+  background-color: rgb(132, 68, 23);
+}
+
+.button:hover {
+  background-color: chocolate;
+}
+
+#clear {
+ padding-left: 50px;
+ padding-right: 50px;
+}
+
+#zero {
+  padding-left: 50px;
+  padding-right: 50px;
 }
