@@ -34,7 +34,7 @@ function divide(num1, num2) {
   return (num2 === 0) ? "You're trying to divide by zero, not cool!": num1 / num2
 }
 
-function display(button) {
+function displayUpdate(button) {
   if (button.id === "clear") {
     num1 = 0;
     operator = "";
@@ -66,6 +66,6 @@ const buttons = document.querySelectorAll('.button')
 
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
-    display(button);
+    displayUpdate(button);
   })
 })
