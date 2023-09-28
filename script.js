@@ -1,6 +1,6 @@
-let num1;
+let num1 = 0;
 let operator = "";
-let num2;
+let num2 = 0;
 
 let displayValue = document.querySelector("#display");
 
