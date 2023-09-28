@@ -13,19 +13,19 @@ function operate(num1, operator, num2) {
 }
 
 function add(num1, num2) {
-  return num1 + num2;
+  return Math.round((num1 + num2) * 100) / 100;
 }
 
 function subtract(num1, num2) {
-  return num1 - num2;
+  return Math.round((num1 - num2) * 100) / 100;
 }
 
 function multiply(num1, num2) {
-  return num1 * num2;
+  return Math.round((num1 * num2) * 100) / 100;
 }
 
 function divide(num1, num2) {
-  return (num2 === 0) ? "You're trying to divide by zero, not cool!": num1 / num2
+  return (num2 === 0) ? "You're trying to divide by zero, not cool!": Math.round((num1 / num2) * 100) / 100;
 }
 
 function displayUpdate(button) {
