@@ -5,17 +5,11 @@ let num2;
 let displayValue = document.querySelector("#display");
 
 function operate(num1, operator, num2) {
-  if (operator === "+") {
-    return add(num1, num2);
-  } else if (operator === "-"){
-    return subtract(num1, num2);
-  } else if (operator === "*"){
-    return multiply(num1, num2);
-  } else if (operator === "/"){
-    return divide(num1, num2);
-  } else {
-    return "Please enter a valid operator";
-  }
+  return operator === "+" ? add(num1, num2)
+    : operator === "-" ? subtract(num1, num2)
+    : operator === "*" ? multiply(num1, num2)
+    : operator === "/" ? divide(num1, num2)
+    : "Please enter a valid operator";
 }
 
 function add(num1, num2) {
@@ -56,7 +50,7 @@ function displayUpdate(button) {
         operator = button.id;
       }
     } else {
-      operator === "" ? num1 += button.id : num2 += button.id
+      operator === "" ? num1 += button.id : num2 += button.id;
     }
     return displayValue.textContent === "0" ? displayValue.textContent = button.id : displayValue.textContent += button.id;
   }
