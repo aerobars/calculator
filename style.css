@@ -2,9 +2,20 @@
   border: 1px solid red;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  width: 225px;
+}
+
+#display {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .row {
   display: flex;
-  width: 250px;
+  width: 200px;
   align-items: center;
   justify-content: center;
   background-color:rgb(100, 85, 75);
@@ -20,11 +31,11 @@
 }
 
 #clear {
- padding-left: 50px;
- padding-right: 50px;
+ padding-left: 55px;
+ padding-right: 55px;
 }
 
-#zero {
-  padding-left: 50px;
-  padding-right: 50px;
+.zero {
+  padding-left: 45px;
+  padding-right: 45px;
 }
